@@ -1,6 +1,30 @@
 # Bird Classification
 
+## Get data
+
+Download the [dataset](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) and unpack it to `CNNs`. The directory should look like
+
+```bash
+-- CNNs
+   |-- CUB_200_2011
+   |    └── CUB_200_2011
+   |    |   ├── attributes
+   |    |   ├── bounding_boxes.txt
+   |    |   ├── classes.txt
+   |    |   ├── image_class_labels.txt
+   |    |   ├── images
+   |    |   ├── images.txt
+   |    |   ├── parts
+   |    |   ├── README
+   |    |   └── train_test_split.txt
+   |    |
+   |    └── attributes.txt
+   ...
+```
+
 ## Random forest classifier
+
+Pretrained Mask-RCNN is used to remove background.
 
 ### Installation
 
@@ -12,21 +36,14 @@
    pip3 install -r requirements.txt
    ```
 
-4. Run the setup script
+4. Run setup from the repository root directory
 
     ```bash
     python3 setup.py install
     ```
 
-5. Download pre-trained COCO weights (mask_rcnn_coco.h5) from the [releases page](https://github.com/matterport/Mask_RCNN/releases).
+### Train and test
 
-### Getting Started
-
-1. Download the [dataset](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) and unpack it.
-2. Change the path in [prepare_data.ipynb](random_forest/prepare_data.ipynb) and run it to prepare the data.
-3. [attribute.ipynb](random_forest/attribute.ipynb) and [color.ipynb](random_forest/color.ipynb) use attribute features from dataset and extracted color features to train the random forest classifier respectively. You may need to change the path in the notebook.
-
-### Reference
-
-1. [Mask-RCNN](https://github.com/matterport/Mask_RCNN)
-2. [Bird Species Classification Based on Color Features](https://ieeexplore.ieee.org/abstract/document/6722493)
+1. Prepare the data with `prepare_data.ipynb`
+2. Train random forest with color histogram features and test it with `color.ipynb`.
+3. Train random forest with attributes related to color and test it with `attribute.ipynb`.
