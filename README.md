@@ -47,3 +47,8 @@ Pretrained Mask-RCNN is used to remove background.
 1. Prepare the data with `prepare_data.ipynb`
 2. Train random forest with color histogram features and test it with `color.ipynb`.
 3. Train random forest with attributes related to color and test it with `attribute.ipynb`.
+
+### Reference
+
+1. [Mask-RCNN](https://github.com/matterport/Mask_RCNN)
+2. [Bird Species Classification Based on Color Features](https://ieeexplore.ieee.org/abstract/document/6722493)
