@@ -52,3 +52,22 @@ Pretrained Mask-RCNN is used to remove background.
 
 1. [Mask-RCNN](https://github.com/matterport/Mask_RCNN)
 2. [Bird Species Classification Based on Color Features](https://ieeexplore.ieee.org/abstract/document/6722493)
+
+## CNNs
+
+Pretrained Mask-RCNN is used to remove background.
+
+### Installation
+
+1. Clone this repository
+2. Change to `CNNs` directory
+
+### Train and test
+
+1. Prepare the data with `Train_Test_Splitting_of_data.ipynb`
+2. Train vgg16, resnet34 and test with `VGG_ResNet.ipynb.ipynb`.
+3. Train bilinear vgg16, bilinear resnet34 and test with `Bilinear_VGG_ResNet.ipynb`.
+
+### Reference
+
+1. [resnet18_bird_classification](https://github.com/Muhammad-MujtabaSaeed/Caltech-Birds-Classification/blob/master/Cub_Birds_200_2011_Classification.ipynb)
