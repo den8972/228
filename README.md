@@ -68,6 +68,10 @@ Pretrained Mask-RCNN is used to remove background.
 2. Train vgg16, resnet34 and test with `VGG_ResNet.ipynb.ipynb`.
 3. Train bilinear vgg16, bilinear resnet34 and test with `Bilinear_VGG_ResNet.ipynb`.
 
+### Weight
+
+Final weights of our CNN models are available at [here](https://drive.google.com/drive/folders/1YelLSn-wd6sgicKPePqGouOMGZBCbplk?usp=sharing).
+
 ### Reference
 
 1. [resnet18_bird_classification](https://github.com/Muhammad-MujtabaSaeed/Caltech-Birds-Classification/blob/master/Cub_Birds_200_2011_Classification.ipynb)
